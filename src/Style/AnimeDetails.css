@@ -1,0 +1,107 @@
+.main_details_container{
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    margin-top: 5rem;
+}
+.info_container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    border: 2px solid white;
+    border-radius: 5px;
+    height: fit-content;
+    padding: 1rem;
+    background-color: rgb(26, 26, 26);
+}
+.anime_data{
+    width: 70%;
+}
+.infos_info{
+    color: rgb(223, 39, 39);
+}
+.episode_container{
+    overflow-y: auto;
+    height: 50vh;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid white;
+    border-radius: 5px;
+    /* font-family: 'Kanit', sans-serif; */
+    padding: 10px;
+}
+.episode_container a{
+    margin: 10px;
+}
+.info_container h4{
+    word-break: normal;
+    margin: 10px;
+}
+.anime_image img{
+    width: 22rem;
+    height: 30rem;
+}
+
+/* ? for phones */
+@media only screen and (max-width: 700px) {
+    .main_details_container{
+        width: 100%;
+        height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin-top: 5rem;
+    }
+    .info_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 95%;
+        border-radius: 5px;
+        height: fit-content;
+        background-color: rgb(26, 26, 26);
+    }
+    .anime_data{
+        width: 90%;
+    }
+    .anime_data > h1{
+        font-size: 24px;
+    }
+    .infos_info{
+        color: rgb(173, 39, 39);
+    }
+    .episode_container{
+        overflow-y: auto;
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        background-color: rgb(0, 0, 0);
+        border-radius: 5px;
+        /* font-family: 'Kanit', sans-serif; */
+        margin-bottom: 15px;
+        border-radius: 10px;
+    }
+    .episode_container a{
+        margin: 5px;
+    }
+    .info_container h4{
+        word-break: normal;
+        margin: 10px;
+    }
+    .anime_image img{
+        width: 60vw;
+        height: 45vh;
+    }   
+    .episodes_titlt h1{
+        font-size: 24px;
+        margin-left: 15px;
+    }
+}

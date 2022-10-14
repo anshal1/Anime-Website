@@ -1,0 +1,140 @@
+@media only screen and (min-width: 700px) {
+  .main_home_container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 6rem;
+  }
+  .type_of_manga_showing {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  #top_animes {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 10px;
+  }
+  #style_character {
+    color: rgb(238, 46, 46);
+  }
+  .anime_card_container{
+      display: flex;
+      width: 100%;
+      height: fit-content;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  main_home_container::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  main_home_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  main_home_container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  .pages_number{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 10px;
+  }
+  .pages_number h3{
+      cursor: pointer;
+      text-decoration: underline;
+      transition: all .4s;
+      padding: 10px;
+      background-color: rgb(26, 26, 26);
+      border-radius: 5px;
+  }
+  .pages_number h3:hover{
+      text-shadow: 0px 3px 12px white;
+  }
+    
+}
+
+
+
+/* ? For Phones */
+@media only screen and (max-width: 700px) {
+  .main_home_container {
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* margin-top: 6rem; */
+  }
+  .type_of_manga_showing {
+    width: 100%;
+    margin: auto;
+    padding: 1rem;
+  }
+  .type_of_manga_showing h1{
+    font-size: 24px;
+  }
+  #top_animes {
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(39, 39, 39);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  #style_character {
+    color: rgb(238, 46, 46);
+  }
+  .anime_card_container{
+      display: flex;
+      width: 100%;
+      height: fit-content;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+  main_home_container::-webkit-scrollbar {
+    width: 1em;
+  }
+  
+  main_home_container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  main_home_container::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+  }
+  .pages_number{
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 10px;
+  }
+  .pages_number h3{
+      cursor: pointer;
+      text-decoration: underline;
+      transition: all .4s;
+      padding: 10px;
+      background-color: rgb(26, 26, 26);
+      border-radius: 5px;
+      font-size: 15px;
+  }
+  .pages_number h2{
+    font-size: 15px;
+  }
+  .pages_number h3:hover{
+      text-shadow: 0px 3px 12px white;
+  }
+}

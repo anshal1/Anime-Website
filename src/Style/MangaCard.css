@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Sans&family=IBM+Plex+Serif&family=Kanit:wght@500&family=Nanum+Gothic:wght@400;700&family=Source+Sans+Pro&display=swap');
+.main_card_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 5px; */
+    padding: 5px;
+    width: 0rem;
+    height: 0rem;
+    max-height: 26rem;
+    background-color: rgb(29, 29, 29);
+    border-radius: 4px;
+    margin: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all .3s;
+}
+.main_card_container_animated{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 5px; */
+    padding: 5px;
+    width: 15rem;
+    height: fit-content;
+    max-height: 26rem;
+    background-color: rgb(29, 29, 29);
+    border-radius: 4px;
+    margin: 15px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: all .2s;
+}
+.image img{
+    display: block;
+    width: 15rem;
+    height: 20rem;
+    transition: all .3s;
+}
+.main_card_container_animated:hover{
+    box-shadow: 5px 0px 1200px 1200px rgba(0, 0, 0, .5);
+    transform: translateY(-5px);
+}
+.name p{
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    padding: 5px;
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+.release{
+    margin-bottom: 10px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 13px;
+}
+.button button{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1rem;
+    font-family: 'Kanit', sans-serif;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px) {
+    .main_card_container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 5px; */
+        padding: 5px;
+        width: 0rem;
+        height: 0rem;
+        max-height: 26rem;
+        background-color: rgb(29, 29, 29);
+        border-radius: 4px;
+        margin: 15px;
+        overflow: hidden;
+        box-sizing: border-box;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: all .3s;
+    }
+    .main_card_container_animated{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 8rem;
+        height: fit-content;
+        max-height: 12rem;
+        background-color: rgb(29, 29, 29);
+        border-radius: 4px;
+        /* margin: 10px; */
+        overflow: hidden;
+        box-sizing: border-box;
+        border: 2px solid white;
+        cursor: pointer;
+        transition: all .2s;
+    }
+    .image img{
+        display: block;
+        width: 8rem;
+        height: 10rem;
+        transition: all .3s;
+    }
+    .main_card_container_animated:hover{
+        box-shadow: 5px 0px 1200px 1200px rgba(0, 0, 0, .5);
+        transform: translateY(-5px);
+    }
+    .name p{
+        color: white;
+        font-size: 12px;
+        text-align: justify;
+        padding: 5px;
+        text-align: center;
+        font-family: 'Kanit', sans-serif;
+    }
+    .release{
+        margin-bottom: 10px;
+        font-family: 'Kanit', sans-serif;
+        font-size: 12px;
+    }
+    .button button{
+        width: 8rem;
+        height: 2rem;
+        font-size: 1rem;
+        font-family: 'Kanit', sans-serif;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

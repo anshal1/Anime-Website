@@ -1,0 +1,24 @@
+.main_search_result{
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    margin-top: 3rem;
+}
+.search_results{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: inherit;
+    height: inherit;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.no_of_result{
+    width: 100%;
+    height: 4rem;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
