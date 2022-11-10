@@ -51,7 +51,7 @@ const Navbar = () => {
         setkey("");
       }
     });
-  }, []);
+  }, [key]);
   return (
     <>
       <div className="main_nav_container">
@@ -267,7 +267,6 @@ const Navbar = () => {
             className="fa-solid fa-magnifying-glass"
             onClick={() => {
               Search();
-              setkey("");
             }}
           ></i>
         </div>

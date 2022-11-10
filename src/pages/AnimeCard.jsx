@@ -7,12 +7,10 @@ import { useLocation } from "react-router-dom";
 import Context from "../Context/Context";
 import "../Style/MangaCard.css";
 const AnimeCard = (props) => {
-  // ? Animating states
-  const [card_anima, setcard_anima] = useState("main_card_container")
   // ? Animating states End
   const location = useLocation();
   const c = useContext(Context);
-  const { type,loading } = c;
+  const { type, loading } = c;
   const slice = (word) => {
     if (word) {
       if (word.length > 40) {
@@ -24,15 +22,24 @@ const AnimeCard = (props) => {
   };
   const seeRef = useRef(null);
   useEffect(()=>{
-    if(!loading){
-        setcard_anima("main_card_container_animated");
-    }
-  }, [loading])
+    // ? Observer for animating card
+    const card = document.querySelectorAll(".main_card_container");
+    const observer = new IntersectionObserver(entries =>{
+      entries.forEach((entry)=>{
+        if(entry.isIntersecting){
+          entry.target.classList = "main_card_container_animated"
+        }
+      })
+    })
+    card.forEach((c)=>{
+      observer.observe(c);
+    })
+  }, [])
   return (
     <>
-      <div className={card_anima} ref={seeRef} onClick={props.detail_page}>
+      <div className="main_card_container" ref={seeRef} onClick={props.detail_page}>
         <div className="image">
-          <img src={props.image} alt="" />
+          <img src={props.image} alt="" loading="lazy" />
         </div>
         <div className="name">
           <p>{slice(props?.name)}</p>
