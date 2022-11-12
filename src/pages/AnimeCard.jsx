@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useContext } from "react";
@@ -7,10 +6,10 @@ import { useLocation } from "react-router-dom";
 import Context from "../Context/Context";
 import "../Style/MangaCard.css";
 const AnimeCard = (props) => {
-  // ? Animating states End
+  const loc = useLocation();
   const location = useLocation();
   const c = useContext(Context);
-  const { type, loading } = c;
+  const { type } = c;
   const slice = (word) => {
     if (word) {
       if (word.length > 40) {
@@ -30,6 +29,8 @@ const AnimeCard = (props) => {
           entry.target.classList = "main_card_container_animated"
         }
       })
+    }, {
+      rootMargin: `${loc.pathname === "/anime/search" ? "50px": "50px"}`
     })
     card.forEach((c)=>{
       observer.observe(c);

@@ -51,12 +51,12 @@
     transform: translateY(-5px);
 }
 .name p{
-    color: white;
-    font-size: 14px;
+    color: rgb(233, 233, 233);
+    font-size: 15px;
     text-align: justify;
     padding: 5px;
     text-align: center;
-    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Kanit', sans-serif; */
 }
 .release{
     margin-bottom: 10px;
